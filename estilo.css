@@ -1,0 +1,70 @@
+body div#vermelho.pequeno {
+	background-color: red;
+}
+
+body div#vermelho.pequeno {
+	background-color: black;
+}
+
+#azul {
+	background-color: blue;
+}
+
+#amarelo {
+	background-color: yellow;
+}
+
+#laranja {
+	background-color: orange;
+}
+
+#cinza {
+	background-color: grey;
+}
+
+#verde {
+	background-color: green;
+}
+
+.pequeno {
+	width: 300px;
+}
+
+.medio {
+	width: 500px;
+}
+
+.grande {
+	width: 700px;
+}
+
+.pequeno, .grande {
+	border: black 1px solid;
+}
+
+#verde p {
+	font-weight: bold;
+}
+
+#menu a {
+	padding: 0 20px;
+	height: 50px;
+	line-height: 50px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	margin: 0;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+	background-color: #ccc;
+	color: black;
+}
+
+#menu a:visited {
+	background-color: #666;
+	color: #333;
+}
