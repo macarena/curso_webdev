@@ -19,8 +19,8 @@ while tentativas > 0:
 	for pos in range(len(palavra)):
 		if palavra[pos] == letra_chutada:
 			tem_letra = True
-			palavra_escondida = '{0}{1}{2}'.format(palavra_escondida[:pos*2], letra_chutada, palavra_escondida[(pos + 1)*2:])
-	
+			palavra_escondida = '{0}{1}{2}'.format(palavra_escondida[:pos*2], letra_chutada + " ", palavra_escondida[(pos + 1)*2:])
+
 	if tem_letra:
 		print 'Acertou!'
 		print palavra_escondida
