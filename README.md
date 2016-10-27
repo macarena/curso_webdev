@@ -57,7 +57,7 @@ Para que o navegador renderize o documento de forma correta, precisamos indicar 
 
 ### Inspecionador de código
 
-Os navegadores modernos nos auxiliam no desenvolvimento com inspecionadores de código. Basta clicar com o botão direito do mouse em qualquer lugar da página (ou no lugar específico que você deseja inspecionar) e escolher no menu a opção **Inspecionar** (__Inspect Element__).
+Os navegadores modernos nos auxiliam no desenvolvimento com inspecionadores de código. Basta clicar com o botão direito do mouse em qualquer lugar da página (ou no lugar específico que você deseja inspecionar) e escolher no menu a opção **Inspecionar** (_Inspect Element_).
 
 ![](https://developer.chrome.com/devtools/images/elements-panel.png)
 
@@ -73,4 +73,54 @@ Edite o template HTML escolhido pensando em montar seu currículo, portifólio o
 
 ### Aula 4
 
-to be continued...
+####DIV e SPAN
+
+São elementos genéricos que servem como marcadores do código HTML para manipular pedaços do documento HTML no CSS ou no JavaScript.
+
+#### Box-model - display
+
+O atributo display configura como um elemento HTML é exibido pelo navegador segundo seu box-model. Vimos 3 valores possíveis para o atributo display:
+
+* block
+* inline
+* inline-block
+
+Existem outros atríbutos para o display que vamos ver em outras aulas.
+
+#### atributos ID e CLASS do HTML
+
+Os atributos ID e CLASS do HTML são fundamentais para manipular os elementos HTML. ID deve receber um valor único, algo que identifique exatamente aquele elemento. CLASS não precisa ser único, pois vários elementos podem pertencer a mesma classe. Fizemos uma analogia com seres vivos que está abaixo. _*ATENÇÃO!* O código abaixo é apenas uma metáfora, não é um código HTML funcional!_
+
+```html
+<humano id="João" class="menino adolescente nerd">
+```
+
+#### Construindo as regras em CSS
+
+A principal forma de anexar um documento CSS a um documento HTML é usando a tag ```<link rel="stylesheet" type="text/css" href="estilo.css">``` dentro da tag ```<head>```.
+
+Nesse documento escrevemos uma regra da seguinte forma:
+
+seletor {
+	atributo: valor;
+}
+
+Veja um exemplo abaixo:
+
+```css
+#menu a {
+	padding: 0 20px;
+	height: 50px;
+	line-height: 50px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	margin: 0;
+}
+```
+
+Para construir o seletor, podemos usar a tag html, o id, a classe além de pseudo-classes. A tag é escrita somente com o nome da tag, o id usa o 'hashtag' #, e a classe usa um ponto final.. No exemplo acima, estamos selecionando todos os elementos da tag 'a' que são filhos do elemento de id 'menu'.
+
+Mais sobre como escrever o seletor CSS, veja [aqui](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Seletores).
