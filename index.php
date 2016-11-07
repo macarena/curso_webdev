@@ -11,4 +11,17 @@ foreach ($_POST as $campo => $valor) {
 <?php
 }
 
+foreach ($_FILES as $arquivo) {
+	
+	$arquivo_tmp = $aquivo['tmp_name'];
+	$destino = 'img/' . $arquivo['name'];
+
+	move_uploaded_file( $arquivo_tmp, $destino );
+
+	?>
+
+	<img src="<?=$destino?>">
+
+<?
+}
 ?>

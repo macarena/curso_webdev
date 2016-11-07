@@ -2,55 +2,67 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<div class="container">
+    <h1>Formulario de coisas coisantes.</h1>
 
-<h1>Formulario de coisas coisantes.</h1>
+    <form action="index.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input id="nome" class="form-control" type="text" name="nome">
+        </div>
+        <div class="form-group">
+            <label for="idade">Idade</label>
+            <input id="idade" class="form-control" type="text" name="idade">
+        </div>
+        <div class="form-group">
+            <label for="peso">Peso</label>
+            <input id="peso" type="text" class="form-control" name="peso">
+        </div>
+        <div class="form-group">
+            <label for="alt">Altura</label>
+            <input id="alt" type="text" class="form-control" name="altura" placeholder="Digite aqui sua altura">
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input id="email" type="text" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+            <label for="perfil">Foto de perfil</label>
+            <input type="file" name="perfil" id="perfil">
+        </div>
+        <div class="form-group">
+            <label for="perfil">Foto de perfil</label>
+            <input type="file" name="arq2" id="perfil">
+        </div>
+        <div class="form-group">
+            <label for="perfil">Foto de perfil</label>
+            <input type="file" name="batata" id="perfil">
+        </div>
+        </fieldset>
 
-<form action="index.php" method="post">
-    <fieldset>
-    <legend>Dados Pessoais</legend>
-    <label for="abacaxi">Nome</label><br>
-    <input id="abacaxi" type="text" name="nome">
-    <br>
-    Idade:<br>
-    <input type="text" name="idade">
-    <br>
-    Peso:<br>
-    <input type="text" name="peso">
-    <br>
-    Altura:<br>
-    <input type="text" name="altura">
-    <br>
-    E-mail:<br>
-    <input type="text" name="email">
-    <br>
+        <fieldset>
+            <legend>Genero</legend>
+        <input type="radio" name="sexo" value="male" checked> Masculino.<br>
+        <input type="radio" name="sexo" value="female"> Feminino.<br>
+        <input type="radio" name="sexo" value="other"> Outros<br>
+        </fieldset>
+        Redes sociais:<br>
+         <input type="checkbox" name="facebook">Facebook<br>
+         <input type="checkbox" name="twitter">Twitter<br>
+         <input type="checkbox" name="google+">Google+<br>
+         <input type="checkbox" name="sanpchat">Snapchat<br>
+         <input type="checkbox" name="youtube">Youtube<br>
+        Biografia:<br>
+        <textarea name="message" rows="10" cols="30"></textarea>
+        <br>
+       <button type="submit">Subir as coisas tudo ai</button>
 
-    <label for="perfil">Foto de perfil</label>
-    <input type="file" name="perfil" id="perfil">
-    </fieldset>
-
-    <fieldset>
-        <legend>Genero</legend>
-    <input type="radio" name="sexo" value="male" checked> Masculino.<br>
-    <input type="radio" name="sexo" value="female"> Feminino.<br>
-    <input type="radio" name="sexo" value="other"> Outros<br>
-    </fieldset>
-    Redes sociais:<br>
-     <input type="checkbox" name="facebook">Facebook<br>
-     <input type="checkbox" name="twitter">Twitter<br>
-     <input type="checkbox" name="google+">Google+<br>
-     <input type="checkbox" name="sanpchat">Snapchat<br>
-     <input type="checkbox" name="youtube">Youtube<br>
-    Biografia:<br>
-    <textarea name="message" rows="10" cols="30"></textarea>
-    <br>
-   <button type="submit">Subir as coisas tudo ai</button>
-
-    
-    
     </form>
-    
-    
+</div> 
 </body>
 </html>
